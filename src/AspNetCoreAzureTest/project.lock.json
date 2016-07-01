@@ -3804,6 +3804,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "AspNetCoreAzureTest.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.6",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "netstandard1.6/AspNetCoreAzureTest.Common.dll": {}
+        },
+        "runtime": {
+          "netstandard1.6/AspNetCoreAzureTest.Common.dll": {}
+        }
       }
     }
   },
@@ -9874,10 +9887,16 @@
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
       ]
+    },
+    "AspNetCoreAzureTest.Common/1.0.0": {
+      "type": "project",
+      "path": "../AspNetCoreAzureTest.Common/project.json",
+      "msbuildProject": "../AspNetCoreAzureTest.Common/AspNetCoreAzureTest.Common.xproj"
     }
   },
   "projectFileDependencyGroups": {
     "": [
+      "AspNetCoreAzureTest.Common >= 1.0.0-*",
       "Microsoft.AspNetCore.Diagnostics >= 1.0.0",
       "Microsoft.AspNetCore.Mvc >= 1.0.0",
       "Microsoft.AspNetCore.Razor.Tools >= 1.0.0-preview2-final",
